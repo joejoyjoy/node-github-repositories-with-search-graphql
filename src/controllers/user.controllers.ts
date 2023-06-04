@@ -1,11 +1,10 @@
-const fetch = (...args) =>
-  import('node-fetch').then(({ default: fetch }) => fetch(...args));
+import fetch from "node-fetch";
 
-const dotenv = require('dotenv');
+import { config } from 'dotenv';
 
-dotenv.config()
+config()
 
-const getAccessToken = async (req, res) => {
+export const getAccessToken = async (req, res) => {
   const { CLIENT_ID, CLIENT_SECRET } = process.env;
   const params = `?client_id=${CLIENT_ID}&client_secret=${CLIENT_SECRET}&code=${req.query.code}`
 
@@ -25,7 +24,9 @@ const getAccessToken = async (req, res) => {
   }
 }
 
-const getUserData = async (req, res) => {
+export const getUserData = async (req, res) => {
+  console.log('Authorization header:', req.get('Authorization'));
+
   req.get("Authorization");
 
   try {
@@ -41,9 +42,4 @@ const getUserData = async (req, res) => {
   } catch (err) {
     console.error(err);
   }
-}
-
-module.exports = {
-  getAccessToken,
-  getUserData
 }
