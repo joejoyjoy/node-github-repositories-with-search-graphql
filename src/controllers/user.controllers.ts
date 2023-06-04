@@ -25,8 +25,6 @@ export const getAccessToken = async (req, res) => {
 }
 
 export const getUserData = async (req, res) => {
-  console.log('Authorization header:', req.get('Authorization'));
-
   req.get("Authorization");
 
   try {
