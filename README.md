@@ -39,7 +39,7 @@ The program employs the authorized GitHub GraphQL API to retrieve repositories a
 ### Future Improvements 📕
 Here are some potential areas for improvement in the application:
 
-1. Enhance the search functionality to allow filtering based on additional criteria such as language, stars, or creation date.
+1. Enhance the search functionality to allow filtering based on additional criteria such as language, stars, or description.
 2. Implement pagination to handle large result sets more efficiently.
 3. Optimize API requests to minimize response times and improve overall performance.
 4. Implement caching mechanisms to reduce the number of API calls and enhance responsiveness.
