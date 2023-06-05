@@ -34,7 +34,7 @@
 
 ## About the project
 
-The application utilizes the official GitHub GraphQL API to fetch repositories for a given user. It provides a simple and responsive interface, inspired by popular apps or the GitHub interface itself. The goal is to deliver a seamless user experience that adheres to good UX principles.
+The program employs the authorized GitHub GraphQL API to retrieve repositories associated with a specified user. It offers a user-friendly and adaptable interface, drawing inspiration from an impressive Dribbble demonstration. The objective is to provide an effortless user journey that upholds excellent user experience.
 
 ### Future Improvements 📕
 Here are some potential areas for improvement in the application:
@@ -46,7 +46,6 @@ Here are some potential areas for improvement in the application:
 5. Add support for different browsers to ensure compatibility and accessibility.
 6. Implement more comprehensive error handling and error messages to guide users effectively.
 7. Continuously update and maintain the application to stay compatible with future changes in the GitHub API.
-
 
 ## Deploy version
 #### Just want to see the project in action?
