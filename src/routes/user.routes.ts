@@ -1,10 +1,11 @@
 import { Router } from 'express'
-import { getAccessToken, getUserData } from '../controllers/user.controllers.js';
+import { getAccessToken, getUserDetails, getUserRepos } from '../controllers/user.controllers.js';
 
 const userRoutes = Router();
 
 userRoutes
   .get('/get-access-token', getAccessToken)
-  .get('/get-user-data', getUserData)
+  .get('/get-user-details', getUserDetails)
+  .post('/post-user-repos', getUserRepos)
 
 export default userRoutes
