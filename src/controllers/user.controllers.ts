@@ -4,6 +4,15 @@ import { config } from 'dotenv';
 
 config()
 
+export const getBackendStatus = async (req, res) => {
+  try {
+    return res.json("Backend Running correctly");
+
+  } catch (err) {
+    console.error(err);
+  }
+}
+
 export const getAccessToken = async (req, res) => {
   const { CLIENT_ID, CLIENT_SECRET } = process.env;
   const params = `?client_id=${CLIENT_ID}&client_secret=${CLIENT_SECRET}&code=${req.query.code}`
